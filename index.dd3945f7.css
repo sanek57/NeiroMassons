@@ -1,3 +1,8 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
+body {
+  font-family: Roboto Condensed, serif;
+}
+
 .app {
   justify-content: center;
   padding-top: 1rem;
@@ -26,6 +31,7 @@ h5 {
 }
 
 .container {
+  box-sizing: border-box;
   border-radius: 1rem;
   width: 400px;
   padding: 1rem;
@@ -40,9 +46,20 @@ h5 {
 
 #question_text {
   height: 50px;
+  font-size: 20px;
 }
 
 .logo {
   width: 70px;
   margin-bottom: 3rem;
+}
+
+.progress-bar {
+  background-color: #0dcaf0;
+}
+
+@media (width <= 400px) {
+  .container {
+    max-width: 350px;
+  }
 }
